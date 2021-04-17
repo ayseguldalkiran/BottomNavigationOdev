@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/toplamaFragment"
+        android:icon="@drawable/resim_arti"
+        android:title="Topla" />
+    <item
+        android:id="@+id/carpmaFragment"
+        android:icon="@drawable/resim_carpi"
+        android:title="Çarp" />
+</menu>

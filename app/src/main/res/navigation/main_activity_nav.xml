@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/toplamaFragment">
+
+    <fragment
+        android:id="@+id/toplamaFragment"
+        android:name="com.aysegul.bottomnavigationodev.ToplamaFragment"
+        android:label="ToplamaFragment"
+        tools:layout="@layout/toplama_fragment">
+        <action
+            android:id="@+id/action_toplamaFragment_to_toplamaSonucFragment"
+            app:destination="@id/toplamaSonucFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carpmaFragment"
+        android:name="com.aysegul.bottomnavigationodev.CarpmaFragment"
+        android:label="CarpmaFragment"
+        tools:layout="@layout/carpma_fragment">
+        <action
+            android:id="@+id/action_carpmaFragment_to_carpmaSonucFragment"
+            app:destination="@id/carpmaSonucFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carpmaSonucFragment"
+        android:name="com.aysegul.bottomnavigationodev.CarpmaSonucFragment"
+        android:label="CarpmaSonucFragment"
+        tools:layout="@layout/carpma_sonuc_fragment">
+        <argument
+            android:name="carpim"
+            app:argType="com.aysegul.bottomnavigationodev.CarpmaSayilar" />
+    </fragment>
+    <fragment
+        android:id="@+id/toplamaSonucFragment"
+        android:name="com.aysegul.bottomnavigationodev.ToplamaSonucFragment"
+        android:label="ToplamaSonucFragment"
+        tools:layout="@layout/toplam_sonuc_fragment">
+        <argument
+            android:name="toplam"
+            app:argType="com.aysegul.bottomnavigationodev.ToplamaSayilar" />
+    </fragment>
+</navigation>
